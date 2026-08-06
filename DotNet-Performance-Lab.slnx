@@ -1,3 +1,7 @@
 <Solution>
-  <Project Path="01-MemoryCache.Basics/01-MemoryCache.Basics.csproj" Id="9302d6c8-43b6-4597-a8e2-a475c511b570" />
+  <Folder Name="/src/">
+    <Project Path="src/01-MemoryCache.Basics/01-MemoryCache.Basics.csproj" />
+    <Project Path="src/02-CacheAside.Api/02-CacheAside.Api.csproj" />
+    <Project Path="src/03-Redis.DistributedCache/03-Redis.DistributedCache.csproj" />
+  </Folder>
 </Solution>
