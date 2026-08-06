@@ -20,7 +20,7 @@
 | # | پروژه | مفهوم |
 |---|-------|-------|
 | 01 | [MemoryCache.Basics](src/01-MemoryCache.Basics) | آشنایی با `IMemoryCache`، Absolute/Sliding Expiration |
-| 02 | CacheAside.Api | پیاده‌سازی الگوی Cache-Aside روی یک API واقعی |
+| 02 | [CacheAside.Api](src/02-CacheAside.Api) | پیاده‌سازی الگوی Cache-Aside روی یک API واقعی |
 | 03 | Redis.DistributedCache | جایگزینی Memory Cache با Redis، تست روی چند instance |
 | 04 | CacheStampede.Demo | شبیه‌سازی و رفع مشکل Cache Stampede |
 | 05 | ResponseCaching.Api | Output Caching / Response Caching و هدرهای HTTP |
