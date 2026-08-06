@@ -4,5 +4,6 @@
     <Project Path="src/02-CacheAside.Api/02-CacheAside.Api.csproj" />
     <Project Path="src/03-Redis.DistributedCache/03-Redis.DistributedCache.csproj" />
     <Project Path="src/04-CacheStampede.Demo/04-CacheStampede.Demo.csproj" Id="51a886ce-a0a6-41ce-9b5a-bff1c336933e" />
+    <Project Path="src/05-ResponseCaching.Api/05-ResponseCaching.Api.csproj" Id="fe0e4a9a-5d32-49c5-b67e-c6a2a085c79c" />
   </Folder>
 </Solution>

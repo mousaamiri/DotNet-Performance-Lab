@@ -22,8 +22,8 @@
 | 01 | [MemoryCache.Basics](src/01-MemoryCache.Basics) | آشنایی با `IMemoryCache`، Absolute/Sliding Expiration |
 | 02 | [CacheAside.Api](src/02-CacheAside.Api) | پیاده‌سازی الگوی Cache-Aside روی یک API واقعی |
 | 03 | [Redis.DistributedCache](src/03-Redis.DistributedCache) | جایگزینی Memory Cache با Redis، تست روی چند instance |
-| 04 | CacheStampede.Demo | شبیه‌سازی و رفع مشکل Cache Stampede |
-| 05 | ResponseCaching.Api | Output Caching / Response Caching و هدرهای HTTP |
+| 04 | [CacheStampede.Demo](src/04-CacheStampede.Demo) | شبیه‌سازی و رفع مشکل Cache Stampede |
+| 05 | [ResponseCaching.Api](src/05-ResponseCaching.Api) | Output Caching / Response Caching و هدرهای HTTP |
 | 06 | Compression.Demo | فشرده‌سازی پاسخ‌ها با Gzip/Brotli |
 | 07 | AsyncPerformance.Demo | مقایسه‌ی Sync-over-Async با Async درست، Task vs ValueTask |
 | 08 | Benchmarks | اندازه‌گیری رسمی همه‌ی موارد بالا با BenchmarkDotNet |
