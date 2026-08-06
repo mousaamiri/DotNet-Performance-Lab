@@ -17,8 +17,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-var orders = app.MapGroup("/orders");
-orders.MapGet("/", () =>
+var productGroup = app.MapGroup("/products");
+productGroup.MapGet("/", () =>
 {
     var products = cache.GetOrCreate($"Products", entry =>
     {
@@ -27,7 +27,7 @@ orders.MapGet("/", () =>
     });
     return products;
 });
-orders.MapGet("/{id:int}", (int id) =>
+productGroup.MapGet("/{id:int}", (int id) =>
 {
     var product = cache.GetOrCreate($"Product:{id}", entry =>
     {
@@ -36,7 +36,7 @@ orders.MapGet("/{id:int}", (int id) =>
     });
     return product;
 });
-orders.MapPatch("/{id:int}", (int id) =>
+productGroup.MapPatch("/{id:int}", (int id) =>
 {
     var success = ProductSeeder.ChangeTitle(id, "Changed");
     if (!success) return Results.NotFound();

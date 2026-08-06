@@ -1,16 +1,16 @@
 @_02_CacheAside.Api_HostAddress = http://localhost:5259
 
-GET {{_02_CacheAside.Api_HostAddress}}/orders/
+GET {{_02_CacheAside.Api_HostAddress}}/products/
 Accept: application/json
 
 ###
 
-GET {{_02_CacheAside.Api_HostAddress}}/orders/5
+GET {{_02_CacheAside.Api_HostAddress}}/products/5
 Accept: application/json
 
 ###
 
-PATCH {{_02_CacheAside.Api_HostAddress}}/orders/5
+PATCH {{_02_CacheAside.Api_HostAddress}}/products/5
 Accept: application/json
 
 ###
