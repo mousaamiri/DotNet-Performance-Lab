@@ -1,4 +1,4 @@
-# DotNet Performance Lab
+# 06_Compression.Demo.Api
 
 <div dir="rtl">
 
@@ -24,7 +24,7 @@
 | 03 | [Redis.DistributedCache](src/03-Redis.DistributedCache) | جایگزینی Memory Cache با Redis، تست روی چند instance |
 | 04 | [CacheStampede.Demo](src/04-CacheStampede.Demo) | شبیه‌سازی و رفع مشکل Cache Stampede |
 | 05 | [ResponseCaching.Api](src/05-ResponseCaching.Api) | Output Caching / Response Caching و هدرهای HTTP |
-| 06 | Compression.Demo | فشرده‌سازی پاسخ‌ها با Gzip/Brotli |
+| 06 | [Compression.Demo](src/06-Compression.Demo.Api) | فشرده‌سازی پاسخ‌ها با Gzip/Brotli |
 | 07 | AsyncPerformance.Demo | مقایسه‌ی Sync-over-Async با Async درست، Task vs ValueTask |
 | 08 | Benchmarks | اندازه‌گیری رسمی همه‌ی موارد بالا با BenchmarkDotNet |
 
