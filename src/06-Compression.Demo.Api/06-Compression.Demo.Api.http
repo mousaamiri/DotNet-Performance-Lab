@@ -1,0 +1,7 @@
+@_06_Compression.Demo.Api_HostAddress = http://localhost:5287
+
+
+GET {{_05_ResponseCaching.Api_HostAddress}}/orders/
+Accept: application/json
+
+###
