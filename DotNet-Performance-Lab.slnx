@@ -8,5 +8,6 @@
     <Project Path="src/06-Compression.Demo.Api/06-Compression.Demo.Api.csproj" Id="e4883c76-8c2e-4d8a-9da8-f76543342644" />
     <Project Path="src/07-AsyncPerformance.Demo.Api/07-AsyncPerformance.Demo.Api.csproj" Id="7f6f14e1-b90f-47f9-99bb-4bde33826e4e" />
     <Project Path="src/07-LoadTester.Console/07-LoadTester.Console.csproj" Id="06b53dd4-fb95-4980-894a-edc91896e209" />
+    <Project Path="src/08-Benchmarks.Console/08-Benchmarks.Console.csproj" Id="42b1b5d6-dd81-4e4b-be08-2529f419f0a1" />
   </Folder>
 </Solution>
