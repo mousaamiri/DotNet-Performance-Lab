@@ -1,6 +1,11 @@
 @_05_ResponseCaching.Api_HostAddress = http://localhost:5170
 
-GET {{_05_ResponseCaching.Api_HostAddress}}/weatherforecast/
+GET {{_05_ResponseCaching.Api_HostAddress}}/orders/
+Accept: application/json
+
+###
+
+GET {{_05_ResponseCaching.Api_HostAddress}}/orders/3
 Accept: application/json
 
 ###
