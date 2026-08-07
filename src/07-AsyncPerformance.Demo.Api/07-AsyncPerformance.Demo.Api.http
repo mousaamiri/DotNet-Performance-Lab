@@ -1,0 +1,16 @@
+@_07_AsyncPerformance.Demo.Api_HostAddress = http://localhost:5121
+
+GET {{_07_AsyncPerformance.Demo.Api_HostAddress}}/orders/sync-over-async
+Accept: application/json
+
+###
+
+GET {{_07_AsyncPerformance.Demo.Api_HostAddress}}/orders/proper-async
+Accept: application/json
+
+###
+
+GET {{_07_AsyncPerformance.Demo.Api_HostAddress}}/orders/valuetask-demo
+Accept: application/json
+
+###

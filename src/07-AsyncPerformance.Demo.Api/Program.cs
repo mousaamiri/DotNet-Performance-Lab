@@ -1,17 +1,11 @@
-using _06_Compression.Demo.Api.Services;
-using Microsoft.AspNetCore.ResponseCompression;
+using _07_AsyncPerformance.Demo.Api.Services;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddOpenApi();
-builder.Services.AddScoped<IDataService, DataService>();
-builder.Services.AddResponseCompression(options =>
-{
-    options.EnableForHttps = true;
-    options.Providers.Add<GzipCompressionProvider>();
-    options.Providers.Add<BrotliCompressionProvider>();
-});
+builder.Services.AddSingleton<IDataService, DataService>();
+
 
 var app = builder.Build();
 
@@ -21,14 +15,12 @@ if (app.Environment.IsDevelopment())
     app.MapScalarApiReference();
 }
 
-app.UseResponseCompression();
 app.UseHttpsRedirection();
-
 var ordersGroup = app.MapGroup("/orders");
-ordersGroup.MapGet("/", (IDataService dataService) => dataService.GetOrdersAsync());
 ordersGroup.MapGet("/sync-over-async", (IDataService dataService) =>
 {
-    var result = dataService.GetOrdersAsync().Result; //anti pattern 
+    // Anti-pattern: blocking on async code can lead to deadlocks and performance issues
+    var result = dataService.GetOrdersAsync().Result;
     return result;
 });
 ordersGroup.MapGet("/proper-async", async (IDataService dataService) =>
@@ -36,5 +28,10 @@ ordersGroup.MapGet("/proper-async", async (IDataService dataService) =>
     var result = await dataService.GetOrdersAsync();
     return result;
 });
-
+ordersGroup.MapGet("/valuetask-demo", async (IDataService dataService) =>
+{
+    
+    var result = await dataService.GetOrdersValueTaskAsync();
+    return result;
+});
 app.Run();

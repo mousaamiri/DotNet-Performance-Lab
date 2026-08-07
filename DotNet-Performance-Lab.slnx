@@ -6,5 +6,7 @@
     <Project Path="src/04-CacheStampede.Demo/04-CacheStampede.Demo.csproj" Id="51a886ce-a0a6-41ce-9b5a-bff1c336933e" />
     <Project Path="src/05-ResponseCaching.Api/05-ResponseCaching.Api.csproj" Id="fe0e4a9a-5d32-49c5-b67e-c6a2a085c79c" />
     <Project Path="src/06-Compression.Demo.Api/06-Compression.Demo.Api.csproj" Id="e4883c76-8c2e-4d8a-9da8-f76543342644" />
+    <Project Path="src/07-AsyncPerformance.Demo.Api/07-AsyncPerformance.Demo.Api.csproj" Id="7f6f14e1-b90f-47f9-99bb-4bde33826e4e" />
+    <Project Path="src/07-LoadTester.Console/07-LoadTester.Console.csproj" Id="06b53dd4-fb95-4980-894a-edc91896e209" />
   </Folder>
 </Solution>
