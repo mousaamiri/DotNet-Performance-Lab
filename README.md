@@ -26,7 +26,7 @@
 | 05 | [ResponseCaching.Api](src/05-ResponseCaching.Api) | Output Caching / Response Caching و هدرهای HTTP |
 | 06 | [Compression.Demo](src/06-Compression.Demo.Api) | فشرده‌سازی پاسخ‌ها با Gzip/Brotli |
 | 07 | [AsyncPerformance.Demo](src/07-AsyncPerformance.Demo.Api) | مقایسه‌ی Sync-over-Async با Async درست، Task vs ValueTask |
-| 08 | Benchmarks | اندازه‌گیری رسمی همه‌ی موارد بالا با BenchmarkDotNet |
+| 08 | [Benchmarks](src/08-Benchmarks.Console) | اندازه‌گیری رسمی همه‌ی موارد بالا با BenchmarkDotNet |
 
 هر پروژه شامل یک README مجزا با شرح زیر است:
 - **مسئله** – چه چالشی مد نظر است؟
@@ -40,6 +40,7 @@
 
 ## وضعیت
 
-در حال توسعه — پروژه‌ها به‌ترتیب شماره‌گذاری پیش می‌روند و اولین پروژه (`MemoryCache.Basics`) آغاز شده است.
-
+ 
+هر ۸ پروژهٔ نقشهٔ راه تکمیل شده‌اند. هر پروژه شامل یک README مستقل با شرح مسئله، پیاده‌سازی و نتایج اندازه‌گیری‌شده است.
+ 
 </div>
